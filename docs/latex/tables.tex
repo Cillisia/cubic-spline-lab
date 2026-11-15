@@ -1,0 +1,32 @@
+\begin{table}[H]\centering\small
+\caption{Лучшие результаты при $n=10000$}\label{tab:best10000}
+\begin{tabular}{lrrrrr}\toprule
+Реализация & $T_1$, с & Лучшее $p$ & $T_p$, с & $S_p$ & $E_p$, \%\\\midrule
+C + Pthreads & 0,000694 & 2 & 0,000674 & 1,030 & 51,49\\
+C + OpenMP & 0,000609 & 24 & 0,000111 & 5,494 & 22,89\\
+C + MPI & 0,001161 & 2 & 0,001047 & 1,109 & 55,44\\
+Python + MPI & 0,018681 & 28 & 0,004711 & 3,965 & 14,16\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[H]\centering\small
+\caption{Лучшие результаты при $n=100000$}\label{tab:best100000}
+\begin{tabular}{lrrrrr}\toprule
+Реализация & $T_1$, с & Лучшее $p$ & $T_p$, с & $S_p$ & $E_p$, \%\\\midrule
+C + Pthreads & 0,008892 & 32 & 0,004584 & 1,940 & 6,06\\
+C + OpenMP & 0,008338 & 48 & 0,000528 & 15,785 & 32,89\\
+C + MPI & 0,013330 & 2 & 0,011154 & 1,195 & 59,75\\
+Python + MPI & 0,215794 & 16 & 0,053368 & 4,044 & 25,27\\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{table}[H]\centering\small
+\caption{Лучшие результаты при $n=1000000$}\label{tab:best1000000}
+\begin{tabular}{lrrrrr}\toprule
+Реализация & $T_1$, с & Лучшее $p$ & $T_p$, с & $S_p$ & $E_p$, \%\\\midrule
+C + Pthreads & 0,140590 & 48 & 0,049335 & 2,850 & 5,94\\
+C + OpenMP & 0,140010 & 48 & 0,010260 & 13,646 & 28,43\\
+C + MPI & 0,199836 & 1 & 0,199836 & 1,000 & 100,00\\
+Python + MPI & 3,595586 & 8 & 0,760502 & 4,728 & 59,10\\
+\bottomrule\end{tabular}
+\end{table}
